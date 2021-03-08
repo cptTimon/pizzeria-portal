@@ -15,8 +15,8 @@ import TablesEventsNew from './components/views/TablesEventsNew/TablesEventsNew'
 
 function App() {
   return (
-    <BrowserRouter >
-      <MainLayout >
+    <BrowserRouter>
+      <MainLayout>
         <Switch>
           <Route exact path={`${process.env.PUBLIC_URL}/`} component={Homepage} />
           <Route exact path={`${process.env.PUBLIC_URL}/kitchen`} component={Kitchen} />
