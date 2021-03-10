@@ -1,15 +1,37 @@
 import React from 'react';
 import styles from './Tables.module.scss';
-import { Link } from 'react-router-dom';
+import Paper from '@material-ui/core/Paper';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+
+const demoContent = [
+  {id: '1', type: 'reservation', duration: 5},
+  {id: '2', type: 'reservation', duration: 2},
+  {id: '3', type: 'event', duration: 6},
+  {id: '4', type: 'reservation', duration: 3},
+  {id: '5', type: 'event', duration: 4},
+  {id: '6', type: 'reservation', duration: 5},
+];
 
 const Tables = () => (
-  <div className={styles.component}>
-    <h2> Tables view </h2>
-    <Link to={`${process.env.PUBLIC_URL}/tables/booking/1`}>Table Booking ID</Link>
-    <Link to={`${process.env.PUBLIC_URL}/tables/booking/new`}>Table Booking NEW</Link>
-    <Link to={`${process.env.PUBLIC_URL}/tables/events/1`}>Table Events ID</Link>
-    <Link to={`${process.env.PUBLIC_URL}/tables/events/new`}>Table Events new</Link>
-  </div>
+  <Paper className={styles.component}>
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell>Table 1</TableCell>
+          <TableCell>Table 2</TableCell>
+          <TableCell>Table 3</TableCell>
+          <TableCell>Table 4</TableCell>
+          <TableCell>Table 5</TableCell>
+          <TableCell>Table 6</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody />
+    </Table>
+  </Paper>
 );
 
 export default Tables;
