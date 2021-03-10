@@ -29,8 +29,7 @@ const Tables = () => (
           <TableCell>Table 6</TableCell>
         </TableRow>
       </TableHead>
-      <TableBody>
-      </TableBody>
+      <TableBody />
     </Table>
   </Paper>
 );
