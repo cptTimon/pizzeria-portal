@@ -7,6 +7,7 @@ import TableRow from '@material-ui/core/TableRow';
 import TableBody from '@material-ui/core/TableBody';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Table from '@material-ui/core/Table';
 
 const demoContent = [
   {
@@ -29,31 +30,33 @@ const demoContent = [
 
 const Kitchen = () => (
   <Paper className={styles.component}>
-    <TableHead>
-      <TableRow>
-        <TableCell>Order number</TableCell>
-        <TableCell>Table</TableCell>
-        <TableCell>Dish</TableCell>
-        <TableCell>Options</TableCell>
-        <TableCell>Amount</TableCell>
-        <TableCell>Price</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {demoContent.map(row => (
-        <TableRow key={row.number}>
-          <TableCell>{row.number}</TableCell>
-          <TableCell>{row.table}</TableCell>
-          <TableCell>{row.name}</TableCell>
-          <TableCell>{row.option.join(', ')}</TableCell>
-          <TableCell>{row.amount}</TableCell>
-          <TableCell>{row.price}</TableCell>
-          <TableCell>
-            <FormControlLabel control={<Checkbox name="checkedC" />} label="Done" />
-          </TableCell>
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell>Order number</TableCell>
+          <TableCell>Table</TableCell>
+          <TableCell>Dish</TableCell>
+          <TableCell>Options</TableCell>
+          <TableCell>Amount</TableCell>
+          <TableCell>Price</TableCell>
         </TableRow>
-      ))}
-    </TableBody>
+      </TableHead>
+      <TableBody>
+        {demoContent.map(row => (
+          <TableRow key={row.number}>
+            <TableCell>{row.number}</TableCell>
+            <TableCell>{row.table}</TableCell>
+            <TableCell>{row.name}</TableCell>
+            <TableCell>{row.option.join(', ')}</TableCell>
+            <TableCell>{row.amount}</TableCell>
+            <TableCell>{row.price}</TableCell>
+            <TableCell>
+              <FormControlLabel control={<Checkbox name="checkedC" />} label="Done" />
+            </TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
   </Paper>
 );
 
