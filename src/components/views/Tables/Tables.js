@@ -5,7 +5,6 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { Link } from 'react-router-dom';
-import TextField from '@material-ui/core/TextField';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -23,6 +22,7 @@ import {
 
 const demoContent = [
   {
+    id: '1',
     hour: '13:00',
     tables: [
       { id: '1', status: 'null' },
@@ -34,6 +34,7 @@ const demoContent = [
     ],
   },
   {
+    id: '2',
     hour: '13:30',
     tables: [
       { id: '1', status: 'null' },
@@ -45,6 +46,7 @@ const demoContent = [
     ],
   },
   {
+    id: '3',
     hour: '14:00',
     tables: [
       { id: '1', status: 'booked' },
@@ -56,6 +58,7 @@ const demoContent = [
     ],
   },
   {
+    id: '4',
     hour: '14:30',
     tables: [
       { id: '1', status: 'booked' },
@@ -67,6 +70,7 @@ const demoContent = [
     ],
   },
   {
+    id: '5',
     hour: '15:00',
     tables: [
       { id: '1', status: 'booked' },
@@ -135,7 +139,7 @@ const Tables = () => {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <Typography variant="h3">
-                Tables view
+                Tables
             </Typography>
           </Paper>
         </Grid>

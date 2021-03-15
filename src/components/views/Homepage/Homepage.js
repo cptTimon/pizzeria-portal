@@ -44,8 +44,8 @@ const Homepage = () => {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
-            <Typography variant="h2">
-              Summary
+            <Typography variant="h3">
+                Summary
             </Typography>
           </Paper>
         </Grid>
