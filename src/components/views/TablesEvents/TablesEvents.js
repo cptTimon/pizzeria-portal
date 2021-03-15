@@ -105,7 +105,7 @@ const TablesEvents = () => {
                     <TableCell>
                       <TextField
                         className={styles.number}
-                        id="standard-number"
+                        id="table"
                         label="Table"
                         type="number"
                         defaultValue={event.table}
@@ -116,18 +116,18 @@ const TablesEvents = () => {
                     </TableCell>
                     <TableCell>
                       <form className={classes.root} noValidate autoComplete="off">
-                        <TextField label="Client's Name" id="standard-size-small" defaultValue={event.name} size="small" />
+                        <TextField label="Client's Name" id="name" defaultValue={event.name} size="small" />
                       </form>
                     </TableCell>
                     <TableCell>
                       <form className={classes.root} noValidate autoComplete="off">
-                        <TextField label="Client's Email" id="standard-size-small" defaultValue={event.contact} size="small" />
+                        <TextField label="Client's Email" id="contact" defaultValue={event.contact} size="small" />
                       </form>
                     </TableCell>
                     <TableCell>
                       <TextField
                         className={styles.number}
-                        id="standard-number"
+                        id="number"
                         label="Number"
                         type="number"
                         defaultValue={event.people}

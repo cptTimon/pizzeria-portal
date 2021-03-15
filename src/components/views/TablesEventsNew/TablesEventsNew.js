@@ -87,7 +87,7 @@ const TablesEventsNew = () => {
                   <TableCell>
                     <TextField
                       className={styles.number}
-                      id="standard-number"
+                      id="table"
                       label="Table"
                       type="number"
                       InputLabelProps={{
@@ -97,18 +97,18 @@ const TablesEventsNew = () => {
                   </TableCell>
                   <TableCell>
                     <form className={classes.root} noValidate autoComplete="off">
-                      <TextField label="Client's Name" id="standard-size-small" size="small" />
+                      <TextField label="Client's Name" id="name" size="small" />
                     </form>
                   </TableCell>
                   <TableCell>
                     <form className={classes.root} noValidate autoComplete="off">
-                      <TextField label="Client's Email" id="standard-size-small" size="small" />
+                      <TextField label="Client's Email" id="contact" size="small" />
                     </form>
                   </TableCell>
                   <TableCell>
                     <TextField
                       className={styles.number}
-                      id="standard-number"
+                      id="number"
                       label="Number"
                       type="number"
                       InputLabelProps={{

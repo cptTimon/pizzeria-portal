@@ -1,5 +1,4 @@
 import React from 'react';
-import 'date-fns';
 import styles from './TablesBooking.module.scss';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -12,13 +11,6 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
-import DateFnsUtils from '@date-io/date-fns';
-import {
-  MuiPickersUtilsProvider,
-  KeyboardTimePicker,
-  KeyboardDatePicker,
-} from '@material-ui/pickers';
-
 
 const demoBooking = [
   {
@@ -112,7 +104,7 @@ const TablesBooking = () => {
                     <TableCell>
                       <TextField
                         className={styles.number}
-                        id="standard-number"
+                        id="table"
                         label="Table"
                         type="number"
                         defaultValue={booking.table}
@@ -123,18 +115,18 @@ const TablesBooking = () => {
                     </TableCell>
                     <TableCell>
                       <form className={classes.root} noValidate autoComplete="off">
-                        <TextField label="Client's Name" id="standard-size-small" defaultValue={booking.name} size="small" />
+                        <TextField label="Client's Name" id="name" defaultValue={booking.name} size="small" />
                       </form>
                     </TableCell>
                     <TableCell>
                       <form className={classes.root} noValidate autoComplete="off">
-                        <TextField label="Client's Email" id="standard-size-small" defaultValue={booking.contact} size="small" />
+                        <TextField label="Client's Email" id="contact" defaultValue={booking.contact} size="small" />
                       </form>
                     </TableCell>
                     <TableCell>
                       <TextField
                         className={styles.number}
-                        id="standard-number"
+                        id="number"
                         label="Number"
                         type="number"
                         defaultValue={booking.people}
