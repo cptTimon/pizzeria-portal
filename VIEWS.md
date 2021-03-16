@@ -8,7 +8,7 @@
 
 - `/logowanie`
   -pola na login i hasło
-  -guzik do zalogowana (link do dashboard)
+  -guzik do zalogowana
 
 # widok dostepnosci stolikow
 
@@ -43,7 +43,8 @@
   - zamowienie (zamowione produkty z opcjami i ceną)
   - kwotę zamówienia
 - `/waiter/order/:id`
-  -jak powyższa
+  - zamowienie (zamowione produkty z opcjami i ceną)
+  - kwotę zamowienia
 
 # widok kuchni
 
