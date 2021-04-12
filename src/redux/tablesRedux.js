@@ -25,7 +25,7 @@ export const updateError = payload => ({ payload, type: UPDATE_ERROR });
 
 /* thunk creators */
 export const fetchFromAPI = () => {
-  return (dispatch, getState) => {
+  return (dispatch) => {
     dispatch(fetchStarted());
 
     Axios
@@ -40,7 +40,7 @@ export const fetchFromAPI = () => {
 };
 
 export const updateStatusInAPI = (id, status) => {
-  return(dispatch, getState) => {
+  return(dispatch) => {
 
     Axios
       .put(`${api.url}/api/${api.tables}/${id}`, {status})

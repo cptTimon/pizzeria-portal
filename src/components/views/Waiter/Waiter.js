@@ -55,6 +55,10 @@ class Waiter extends React.Component {
         return (
           <Button onClick={() => updateStatus(id, 'free')}>free</Button>
         );
+      case 'new order':
+        return (
+          <Button onClick={() => updateStatus(id, 'ordered')}>ordered</Button>
+        );
       default:
         return null;
     }
